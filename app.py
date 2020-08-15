@@ -20,6 +20,12 @@ def square(n):
         "result": n ** 2
     })
 
+def cube(n):
+    return jsonify({
+        "query":n,
+        "result":n ** 3
+    })
+
 
 if __name__ == '__main__':
     app.run()
